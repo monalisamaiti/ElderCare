@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/memberForm.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Member Form</title>
+</head>
+
+<body>
+    <nav-bar>
+        <ul>
+            <li><a href="homepage.html" ><img src='images/logo.png' class="active" alt='logo' style='height: 40px; width: 40px; border-radius: 0 0 0 10px;'></a></li>
+            <li><a class="active" href="homepage.html" style="font-family: 'Sacramento', cursive; border-radius: 0 10px 0px 0;"><strong>&nbsp;ElderCare&nbsp;</strong> </a></li>
+          </ul>
+    </nav-bar>
+
+    <div class="heading" style="font-family: 'Dancing Script', cursive; font-size: 80px; text-shadow: 2px 2px 4px rgb(105, 105, 105);">
+        <center>Become a member</center>
+    </div>
+
+    <section>
+        <form action="#" method="POST" autocomplete="on" id="form">
+
+            <div class="name">
+                <br>
+                <label for='username'>&nbsp;&nbsp;Enter your name</label><br>
+                <input type="text" id="username" name="username" placeholder="Full Name" class="button" required>
+            </div>
+            <br>
+
+            <div class="phone">
+                <label for="phone">&nbsp;&nbsp;Enter your phone number </label><br>
+                <input type="tel" id="phone" name="phone" pattern="[1-9]{1}-[0-9]{9}" placeholder="0123456789" class="button" required>
+            </div>
+            <br>
+
+            <div class="email" >
+                <label for='email'>&nbsp;&nbsp;Enter your email</label><br>
+                <input type="email" id="email" name="email" class="button" placeholder="mail@eldercare.in" required>
+            </div>
+            <br>
+            
+            <div class="address">
+                &nbsp;&nbsp;Enter your Address<br>
+            <textarea cols="100%" rows="2" placeholder="Address Line 1" class="button" required></textarea><br>
+            <textarea cols="100%" rows="2" placeholder="Address Line 2" class="button" required></textarea>
+            <br>
+
+            <label for='city'>&nbsp;&nbsp;City </label>       
+            <input type="text" id="city" name="city" placeholder="City" class="button" required>
+            
+            <label for="state">&nbsp;&nbsp;State </label><br>
+            <select name="state" id="state" class="button" required>
+                <option value="" disabled selected hidden>Select state</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+            </select><br>
+    
+            <label for='postal'>&nbsp;&nbsp;Postal Code </label>
+            <input type="number" id="postal" pattern="[1-9]{1}-[1-9]{5}" placeholder="000000" name="postal" class="button" required>
+            <br><br>
+            </div>
+
+            <div class="gender">
+                &nbsp;&nbsp;Select your gender<br><br>
+                <input type="radio" name="x" id="male" value="Male">
+                <label for="male" class="label"><i class="fa fa-male"></i>	&nbsp; Male</label><br><br>
+
+                <input type="radio" name="x" id="female" value="Female">
+                <label for="female" class="label"><i class="fa fa-female"></i> &nbsp;Female</label><br><br>
+
+                <input type="radio" name="x" id="other" value="Other">
+                <label for="other"  class="label"><i class="fa fa-group"></i>&nbsp;Other</label>
+            </div>
+            <br>
+
+            <div class="age">
+                <label for="age-group" class="label">&nbsp;&nbsp;Select your age group </label>
+                <select name="age-group-values" id="age-group" class="button">
+                    <option value="" disabled selected hidden>Select age</option>
+                    <option value="50-60">50 years - 60 years</option>
+                    <option value="60-70">60 years - 70 years</option>
+                    <option value="70-75">70 years - 75 years</option>
+                    <option value="75+">Above 75 years</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="files">
+                <label for="Aadhar" class="label">&nbsp;&nbsp;Submit your Aadhar Card here</label>
+                <div style="font-size: small; color: #cdcdcd;">&nbsp;&nbsp;&nbsp;&nbsp;For verification purposes</div> 
+                <input type="file" id="Aadhar" name="Aadhar" class="button" multiple required><br><br>
+
+                <label for="Covid" class="label">&nbsp;&nbsp;Submit your COVID test report</label>
+                <input type="file" id="Covid" name="Covid" class="button" multiple required><br><br>
+
+                <label for="Vaccine" class="label">&nbsp;&nbsp;Submit your Vaccination Certificate</label>
+                <input type="file" id="Vaccine" name="Vaccine" class="button" multiple required>
+            </div>
+            
+            <div class="helpCheckbox">
+                <p>&nbsp;&nbsp;What kind of help do you need?</p>
+                <input type="radio" name="x" id="Transportation" value="Transportation">
+                <label for="text" class="label">Transportation</label><br>
+
+                <input type="radio" name="x" id="FoodService" value="FoodService">
+                <label for="text" class="label">Food Service</label><br>
+
+                <input type="radio" name="x" id="FirstAid" value="FirstAid">
+                <label for="text" class="label">First Aid</label><br>
+
+                <input type="radio" name="x" id="Cleaning" value="Cleaning">
+                <label for="text" class="label">Cleaning</label><br>
+
+                <input type="radio" id="Teaching" name="x" value="Teaching">
+        <label for="Teaching"> Teaching</label><br>
+
+        <input type="radio" id="FinAid" name="x" value="FinAid">
+        <label for="FinAid"> Financial Aid</label><br>
+
+        <input type="radio" id="B&R" name="x" value="B&R">
+        <label for="B&R"> Building & Renovating</label><br>
+
+        <input type="radio" id="IT" name="x" value="IT">
+        <label for="IT"> IT</label><br>
+
+        <input type="radio" id="Childcare" name="x" value="Childcare">
+        <label for="Childcare"> Childcare</label><br>
+
+        <input type="radio" id="L&H" name="x" value="L&H">
+        <label for="L&H"> Law & Human Rights</label><br>
+
+
+                <input type="radio" name="x" id="Other" value="Other">
+                <label for="text" class="label">Other</label>
+            </div>
+            <br>
+
+            <div id="textarea">
+                &nbsp;&nbsp;Describe your work below: <br>
+                <textarea cols="30" rows="10" placeholder="Type here" class="button" style="resize: none;" required></textarea>
+            </div> 
+            <br> 
+        </form>
+        <br>
+        <form action="tyMember.html" method="GET">
+            <center><a href="tyMember.html"> <input type="submit" value="Submit" class="submit"></a></center>
+        </form>
+    </section>
+</body>
+
+</html>

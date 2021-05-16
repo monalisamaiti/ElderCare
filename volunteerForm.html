@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/volunteerForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Volunteer Registration</title>
+</head>
+<body>
+  <nav-bar>
+    <ul>
+      <li><a href="homepage.html" class=""><img src='images/logo.png' class="active" alt='logo' style='height: 40px; width: 40px; border-radius: 0 0 0 10px;'></a></li>
+      <li><a class="active" href="homepage.html" style="font-family: 'Sacramento', cursive; border-radius: 0 10px 0px 0;"><strong>&nbsp;ElderCare&nbsp;</strong> </a></li>
+      </ul>
+</nav-bar>
+
+<div class="heading" style="font-family: 'Dancing Script', cursive; font-size: 80px; text-shadow: 2px 2px 4px rgb(105, 105, 105);">
+  <center>Become a member</center>
+</div>
+
+    <section>
+    <form action="#" method="POST" id="form">
+      <br>
+      <label for='username'>&nbsp;&nbsp;Enter your name </label><br>
+      <input type="text" id="username" name="username" placeholder="Full Name" class="button" required><br><br>
+        
+
+        <label for="phone">&nbsp;&nbsp;Enter your phone number </label><br>
+        <input type="tel" id="phone" name="phone" pattern="[1-9]{1}-[0-9]{9}" placeholder="0123456789" class="button" required><br><br>
+
+
+        <label for='email'>&nbsp;&nbsp;Enter your email </label><br>
+        <input type="email" id="email" name="email" placeholder="mail@eldercare.in" class="button" required><br><br>
+
+        <label for='age'>&nbsp;&nbsp;Enter your age </label><br>
+        <input type="number" id="age" name="age" placeholder="Age" class="button" required><br><br>
+
+        <div class="address">
+          &nbsp;&nbsp;Enter your address<br>
+      <textarea cols="100" rows="2" placeholder="Address Line 1" class="button" required></textarea><br>
+      <textarea cols="100" rows="2" placeholder="Address Line 2" class="button" required></textarea>
+          <br>
+      <label for='city'>&nbsp;&nbsp;City </label>
+      
+      <input type="text" id="city" name="city" placeholder="City" class="button" required>
+      
+      <label for="state">&nbsp;&nbsp;State </label><br>   
+      <select name="state" id="state" class="button" required>
+          <option value="" disabled selected hidden>Select state</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="West Bengal">West Bengal</option>
+          <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+          <option value="Daman and Diu">Daman and Diu</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Lakshadweep">Lakshadweep</option>
+          <option value="Puducherry">Puducherry</option>
+      </select><br>
+
+      <label for='postal'>&nbsp;&nbsp;Postal Code </label>
+      <input type="number" id="postal" name="postal" placeholder="000000" pattern="[1-9]{1}-[1-9]{5}" class="button" required><br><br>
+      </div>
+
+      &nbsp;&nbsp;Select your gender<br><br>
+        <input type="radio" name="x" id="male" value="Male">
+        <label for="male"><i class="fa fa-male"></i>&nbsp; Male</label><br><br>
+        
+        <input type="radio" name="x" id="female" value="Female">
+        <label for="female"><i class="fa fa-female"></i>&nbsp;Female</label><br><br>
+        
+        <input type="radio" name="x" id=other" value="Other">
+        <label for="other"><i class="fa fa-group"></i>	&nbsp;Other</label>
+        <br><br>
+
+        <label for="Aadhar">&nbsp;&nbsp;Submit your Aadhar Card here</label><br>
+        <div style="font-size: small; color: #cdcdcd;">&nbsp;&nbsp;&nbsp;&nbsp;For verification purposes</div> 
+        <input type="file" id="Aadhar" name="Aadhar" class="button" required multiple><br><br>
+
+        <label for="Covid">&nbsp;&nbsp;Submit your COVID test report</label>
+        <input type="file" id="Covid" name="Covid" class="button" required multiple><br><br>
+
+        <label for="Vaccine">&nbsp;&nbsp;Submit your Vaccination Certificate</label>
+        <input type="file" id="Vaccine" name="Vaccine" class="button" class="button" required multiple><br><br>
+
+
+        &nbsp;&nbsp;Skill set<br><br>
+        <input type="checkbox" id="Transportation" name="Transportation" value="Transportation">
+        <label for="Transportation">Transportation</label><br>
+        
+        <input type="checkbox" id="FoodService" name="FoodService" value="FoodService">
+        <label for="FoodService"> Food Service</label><br>
+        
+        <input type="checkbox" id="FirstAid" name="FirstAid" value="FirstAid">
+        <label for="FirstAid"> First Aid</label><br>
+
+        <input type="checkbox" id="Cleaning" name="Cleaning" value="Cleaning">
+        <label for="Cleaning"> Cleaning</label><br>
+
+        <input type="checkbox" id="Teaching" name="Teaching" value="Teaching">
+        <label for="Teaching"> Teaching</label><br>
+
+        <input type="checkbox" id="FinAid" name="FinAid" value="FinAid">
+        <label for="FinAid"> Financial Aid</label><br>
+
+        <input type="checkbox" id="B&R" name="B&R" value="B&R">
+        <label for="B&R"> Building & Renovating</label><br>
+
+        <input type="checkbox" id="IT" name="IT" value="IT">
+        <label for="IT"> IT</label><br>
+
+        <input type="checkbox" id="Childcare" name="Childcare" value="Childcare">
+        <label for="Childcare"> Childcare</label><br>
+
+        <input type="checkbox" id="L&H" name="L&H" value="L&H">
+        <label for="L&H"> Law & Human Rights</label><br>
+
+        <input type="checkbox" id="Other" name="Other" value="Other">
+        <label for="Other"> Other</label><br><br>
+
+        <label for="week">&nbsp;&nbsp;What week are you free to volunteer?</label>
+        <input type="week" id="week" name="week" class="button" required><br><br>
+        
+        &nbsp;&nbsp;What time can you work?<br><br>
+        <input type="radio" name="x" id="Anytime" value="Anytime">
+        <label for="text">Any time is fine</label><br>
+
+        <input type="radio" name="x" id="8-noon" value="8-noon">
+        <label for="text">8am to noon</label><br>
+
+        <input type="radio" name="x" id="1-5pm" value="1-5pm">
+        <label for="text">1pm to 5pm</label><br>
+
+        <input type="radio" name="x" id="Other" value="Other">
+        <label for="text">Other</label>
+        <br><br>
+
+        &nbsp;&nbsp;Why do you want to volunteer?<br>
+        <textarea cols="30" rows="10" placeholder="Type here" class="button" style="resize: none;" required></textarea>
+
+        <br><br>
+    </form>
+    <br>
+    <form action="tyVolunteer.html" method="GET">
+      <center>
+        <input type="submit" value="Submit" class="submit">
+      </center>
+      
+    </form>
+    </section>
+</body>
+</html>
